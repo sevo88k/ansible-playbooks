@@ -1,0 +1,15 @@
+---
+- name: Create a folder on Windows Server 2016
+  hosts: all
+  gather_facts: no  # We don't need to gather facts for this task
+
+  tasks:
+    - name: Create a folder on C drive
+      win_file:
+        path: C:\ExampleFolder  # Specify the folder path you want to create
+        state: directory
+      register: folder_creation_result
+
+    - name: Display folder creation result
+      debug:
+        var: folder_creation_result
