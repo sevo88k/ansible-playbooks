@@ -3,6 +3,9 @@
   hosts: all
   gather_facts: no  # We don't need to gather facts for this task
 
+  vars:
+    ansible_remote_tmp: /tmp
+
   tasks:
     - name: Create a folder on C drive
       win_file:
