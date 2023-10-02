@@ -1,5 +1,5 @@
 ---
-
+hosts: all
 plugin: community.vmware.vmware_vm_inventory
 hostname: 192.168.4.206
 username: sean@c-ways
