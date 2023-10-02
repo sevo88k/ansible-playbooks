@@ -6,7 +6,7 @@
     password: '{{ vcenter_password }}'
     esxi_hostname: '{{ esxi_hostname }}'
     options:
-        'Config.HostAgent.log.level': 'verbose'
-        'Annotations.WelcomeMessage': 'Hello World'
-        'Config.HostAgent.plugins.solo.enableMob': false
+      'Config.HostAgent.log.level': 'verbose'
+      'Annotations.WelcomeMessage': 'Hello World'
+      'Config.HostAgent.plugins.solo.enableMob': false
   delegate_to: localhost
