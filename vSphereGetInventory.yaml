@@ -1,9 +1,9 @@
 ---
 hosts: all
 plugin: community.vmware.vmware_vm_inventory
-hostname: 192.168.4.206
-username: sean@c-ways
-password: Poppymutt2"
+hostname: 
+username:
+password: 
 validate_certs: false
 properties:
   #- all
