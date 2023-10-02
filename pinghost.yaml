@@ -2,3 +2,5 @@
   gather_facts: true
   tasks:
   - action: ping
+# The Output of the above task will be displayed on the Screen
+  - debug: var=output.stdout_lines
