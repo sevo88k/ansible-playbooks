@@ -1,3 +1,4 @@
+---
 - name: Manage multiple settings for an ESXi host
   community.vmware.vmware_host_config_manager:
     hostname: '{{ vcenter_hostname }}'
