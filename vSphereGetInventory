@@ -1,0 +1,22 @@
+---
+
+plugin: community.vmware.vmware_vm_inventory
+hostname: 192.168.4.206
+username: sean@c-ways
+password: Poppymutt2"
+validate_certs: false
+properties:
+  #- all
+  - config.name
+  - config.uuid
+  - guest.guestFamily
+  - guest.hostName
+  - guest.ipAddress
+  - runtime.powerState
+hostnames:
+  - config.name | lower
+groups:
+  win19srv: (runtime.powerState == 'poweredOn' and guest.guestFamily == 'windowsGuest') and guest.hostName.beginswith('Win19srv-')
+compose:
+  ansible_host: guest.hostName
+  ansible_ssh_host: guest.hostName
