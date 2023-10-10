@@ -1,7 +1,5 @@
----
 – hosts: Windows
-  gather_facts: true
-  
+  gather_facts: true  
   tasks:
   – name: "What's my name again?"
     debug:
