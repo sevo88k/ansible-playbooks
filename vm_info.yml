@@ -20,4 +20,4 @@
   
    - name: print VM info
        ansible.builtin.debug:
-       var: detailed_vm_info
+         var: detailed_vm_info
