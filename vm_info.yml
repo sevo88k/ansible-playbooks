@@ -9,8 +9,8 @@
     - name: get VM info
       community.vmware.vmware_guest_info:
         hostname: 192.168.4.206
-       # username: seane
-       # password: Poppymutt2"
+        username: superuser@vsphere.local
+        password: Poppyleon1!
         datacenter_name: "C-Ways Production Cluster"
         validate_certs: false
         name: VP-Sharegate
