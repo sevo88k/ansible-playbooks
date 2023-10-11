@@ -1,6 +1,6 @@
 ---
 - name: info vm demo
-- hosts: localhost
+- hosts: all
   become: false
   gather_facts: false
   collections:
