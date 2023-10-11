@@ -1,19 +1,19 @@
 ---
 - name: info vm demo
 - hosts: all
-  become: false
-  gather_facts: false
-  collections:
-    - community.vmware
-  pre_tasks:
-   - include_vars: vars.yml
-  tasks:
-   - name: get VM info
-     vmware_guest_info:
-       hostname: 192.168.4.206
-       username: seane
-       password: Poppymutt2"
-       datacenter: "C-Ways Production Cluster"
-       validate_certs: false
-       name: VP-Sharegate
+    become: false
+    gather_facts: false
+    collections:
+      - community.vmware
+    pre_tasks:
+     - include_vars: vars.yml
+    tasks:
+     - name: get VM info
+       vmware_guest_info:
+         hostname: 192.168.4.206
+         username: seane
+         password: Poppymutt2"
+         datacenter: "C-Ways Production Cluster"
+         validate_certs: false
+         name: VP-Sharegate
 
