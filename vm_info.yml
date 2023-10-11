@@ -16,7 +16,7 @@
        datacenter: "C-Ways Production Cluster"
        validate_certs: false
        name: VP-Sharegate
-    register: detailed_vm_info
+   - register: detailed_vm_info
   
     -name: print VM info
     ansible.builtin.debug:
