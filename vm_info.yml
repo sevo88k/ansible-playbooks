@@ -19,5 +19,5 @@
    - register: detailed_vm_info
   
    - name: print VM info
-       ansible.builtin.debug:
-         var: detailed_vm_info
+     ansible.builtin.debug:
+       var: detailed_vm_info
