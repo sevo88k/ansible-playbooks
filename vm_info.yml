@@ -14,3 +14,5 @@
         datacenter_name: "C-Ways Production Cluster"
         validate_certs: false
         name: VP-Sharegate
+      vars:
+        ansible_ssh_pass: Poppyleon1!
