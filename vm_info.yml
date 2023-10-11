@@ -16,5 +16,4 @@
        datacenter: "C-Ways Production Cluster"
        validate_certs: false
        name: VP-Sharegate
-   - register: detailed_vm_info
-  
+
